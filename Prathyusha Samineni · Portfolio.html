@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prathyusha Samineni · Data Analytics Portfolio</title>
+<meta name="description" content="Portfolio of Prathyusha Samineni, a Computer Science graduate and data analytics trainee from Hyderabad.">
+<style>
+:root{
+  --bg:#f7f8fb;--surface:#ffffff;--text:#16181d;--muted:#5b6270;--line:#e3e6ee;
+  --accent:#4f46e5;--accent-soft:#eceafd;--accent-text:#ffffff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1117;--surface:#171a23;--text:#eceef4;--muted:#9aa2b3;--line:#272b38;
+    --accent:#8b83ff;--accent-soft:#23233f;--accent-text:#0f1117;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1117;--surface:#171a23;--text:#eceef4;--muted:#9aa2b3;--line:#272b38;
+  --accent:#8b83ff;--accent-soft:#23233f;--accent-text:#0f1117;color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+.brand{font-weight:700;color:var(--text)}
+.links{display:flex;gap:16px;align-items:center;overflow-x:auto;font-size:14px}
+.links a{color:var(--muted);white-space:nowrap}
+.links a:hover{color:var(--text);text-decoration:none}
+#theme{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 9px;cursor:pointer;font-size:14px}
+.hero{padding:72px 0 48px}
+.eyebrow{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:600;padding:4px 12px;border-radius:999px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.1;margin:18px 0 14px;letter-spacing:-.02em}
+.lead{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 26px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);color:var(--accent-text);border-color:var(--accent)}
+.btn:hover{text-decoration:none;opacity:.9}
+section{padding:40px 0}
+h2{font-size:24px;margin:0 0 20px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 8px;font-size:17px}
+.card p,.card li{color:var(--muted);font-size:15px;margin:0 0 8px}
+.card ul{margin:0;padding-left:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{background:var(--accent-soft);color:var(--accent);font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.contact{text-align:center}
+.contact p{color:var(--muted);max-width:520px;margin:0 auto 22px}
+.contact .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <span class="brand">Prathyusha S.</span>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Toggle light and dark theme">◐</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Open to entry-level roles · Hyderabad, India</span>
+    <h1>Prathyusha Samineni</h1>
+    <p class="lead">Computer Science graduate and data analytics trainee who turns raw datasets into clear, reliable insights using Python, SQL and Power BI.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="mailto:prathyushasamineni5@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/prathyushasamineni" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <div class="card">
+    <p>I’m a B.Tech Computer Science and Engineering graduate (JNTUH, 2025) who completed hands-on data analytics training at Codegnan. I enjoy cleaning messy data, finding patterns, and presenting findings in a way people can act on.</p>
+    <p>I work carefully, pay close attention to detail, and I’m always keen to learn new tools and take on new problems.</p>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span></div></div>
+    <div class="card"><h3>Data analysis</h3><div class="tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Excel</span></div></div>
+    <div class="card"><h3>Visualization</h3><div class="tags"><span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span></div></div>
+    <div class="card"><h3>Machine learning</h3><div class="tags"><span class="tag">Supervised</span><span class="tag">Unsupervised</span><span class="tag">Model evaluation</span></div></div>
+    <div class="card"><h3>Tools</h3><div class="tags"><span class="tag">Jupyter Notebook</span><span class="tag">VS Code</span></div></div>
+    <div class="card"><h3>Soft skills</h3><div class="tags"><span class="tag">Attention to detail</span><span class="tag">Problem-solving</span><span class="tag">Adaptability</span></div></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Exploratory Data Analysis: Census Income</h3>
+      <p>Cleaned the Census Income dataset, handled null values and detected outliers. Used statistical analysis and filtering to pull out insights, and visualized income distribution across age, occupation and marital status.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span></div>
+    </div>
+    <div class="card">
+      <h3>Trust-Based Incentive Scheme for Big Data Allocation</h3>
+      <p>Designed a trust-based incentive mechanism to allocate big data tasks efficiently in a mobile social cloud. Implemented a dynamic trust scoring model to judge the reliability of mobile nodes and improve resource sharing.</p>
+      <div class="tags"><span class="tag">Big data</span><span class="tag">Cloud</span><span class="tag">Trust model</span></div>
+    </div>
+    <div class="card">
+      <h3>Improving Digital Forensic Security</h3>
+      <p>Designed a secure storage system for digital forensic evidence in a cloud environment, with user authentication to block unauthorized access and encryption to protect confidentiality and integrity.</p>
+      <div class="tags"><span class="tag">Cloud security</span><span class="tag">Encryption</span><span class="tag">Authentication</span></div>
+    </div>
+  </div>
+  <p style="margin-top:18px"><a href="https://github.com/Prathyushasamineni" target="_blank" rel="noopener">See more on GitHub →</a></p>
+</div></section>
+
+<section id="training"><div class="wrap">
+  <h2>Training</h2>
+  <div class="card">
+    <div class="row"><h3>Data Analytics Trainee · Codegnan</h3><span class="meta">Jul 2025 – Jan 2026 · Hyderabad</span></div>
+    <ul>
+      <li>Trained in SQL, Excel, Python, Power BI and data visualization.</li>
+      <li>Worked on real-world datasets for data cleaning, analysis and reporting.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education &amp; certifications</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>B.Tech, Computer Science and Engineering</h3>
+      <p class="meta">Swarna Bharathi Institute of Science and Technology (JNTUH) · 2021–2025</p>
+      <p>CGPA: 7.28</p>
+    </div>
+    <div class="card">
+      <h3>Earlier education</h3>
+      <p>Higher Secondary, Krishnaveni Junior College (2019–2021): 89%</p>
+      <p>Secondary, Sri Adarsha High School (2018–2019): 92%</p>
+    </div>
+    <div class="card">
+      <h3>Certifications</h3>
+      <ul>
+        <li>Data Analytics, Codegnan IT Solutions</li>
+        <li>Python Programming, HackerRank</li>
+        <li>SQL, Infosys Springboard</li>
+        <li>Machine Learning, Coursera</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let’s connect</h2>
+  <p>I’m looking for an entry-level data analytics role where I can learn fast and contribute. Feel free to reach out.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:prathyushasamineni5@gmail.com">prathyushasamineni5@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/prathyushasamineni" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/Prathyushasamineni" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Prathyusha Samineni · Hyderabad, Telangana</div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var saved=localStorage.getItem('theme');if(saved)root.setAttribute('data-theme',saved);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
